@@ -3,7 +3,7 @@
 import { tokens } from "@/theme"
 import { useTheme, Box, IconButton, Typography } from "@mui/material"
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { Sidebar as ProSidebar, Menu, MenuItem } from "react-pro-sidebar"
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
@@ -53,7 +53,7 @@ const Item: React.FC<ItemProps> = ({
   )
 }
 
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
   const theme = useTheme()
   const colors = tokens(theme.palette.mode)
   const [isCollapsed, setIsCollapsed] = useState(false)
