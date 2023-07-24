@@ -142,7 +142,12 @@ export default function ManageTeam() {
           },
         }}
       >
-        <DataGrid checkboxSelection rows={mockDataTeam} columns={columns} />
+        <DataGrid 
+          checkboxSelection 
+          rows={mockDataTeam}
+          // @ts-ignore 
+          columns={columns} 
+        />
       </Box>
     </Box>
   )

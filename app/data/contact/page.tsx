@@ -52,7 +52,7 @@ export default function ContactsInfo() {
       flex: 1,
     }
   ]
-
+  
   return (
     <Box m="20px">
       <Header
