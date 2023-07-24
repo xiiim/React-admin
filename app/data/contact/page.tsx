@@ -52,7 +52,7 @@ export default function ContactsInfo() {
       flex: 1,
     }
   ]
-  
+
   return (
     <Box m="20px">
       <Header
@@ -94,6 +94,7 @@ export default function ContactsInfo() {
       >
         <DataGrid
           rows={mockDataContacts}
+          // @ts-ignore
           columns={columns}
           components={{ Toolbar: GridToolbar }}
         />
