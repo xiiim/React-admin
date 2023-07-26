@@ -5,7 +5,11 @@ import { ResponsiveBar } from "@nivo/bar"
 import { tokens } from "@/theme"
 import { mockBarData as data } from "@/data/mockData"
 
-const Bar = ({ isDashboard = false }) => {
+interface BarProps{
+  isDashboard: any
+}
+
+const Bar: React.FC<BarProps> = ({ isDashboard=false }) => {
   const theme = useTheme()
   const colors = tokens(theme.palette.mode)
 
@@ -78,7 +82,7 @@ const Bar = ({ isDashboard = false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? "" : "country", // changed
+        legend: isDashboard ? undefined : "country", // changed
         legendPosition: "middle",
         legendOffset: 32,
       }}
@@ -86,7 +90,7 @@ const Bar = ({ isDashboard = false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? "" : "food", // changed
+        legend: isDashboard ? undefined : "food", // changed
         legendPosition: "middle",
         legendOffset: -40,
       }}
