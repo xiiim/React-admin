@@ -82,7 +82,7 @@ const Bar: React.FC<BarProps> = ({ isDashboard=false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "country", // changed
+        legend: "country", // changed
         legendPosition: "middle",
         legendOffset: 32,
       }}
@@ -90,7 +90,7 @@ const Bar: React.FC<BarProps> = ({ isDashboard=false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "food", // changed
+        legend: "food", // changed
         legendPosition: "middle",
         legendOffset: -40,
       }}
