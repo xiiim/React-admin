@@ -11,7 +11,7 @@ interface GeographyProps {
   isDashboard: any
 }
 
-const Geography: React.FC<GeographyProps> = ({ isDashboard=false }) => {
+const Geography: React.FC<GeographyProps> = ({ isDashboard }) => {
   const theme = useTheme()
   const colors = tokens(theme.palette.mode)
   return (

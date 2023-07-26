@@ -18,7 +18,7 @@ export default function GeographyChart({ isDashboard = false }) {
         border={`1px solid ${colors.grey[100]}`}
         borderRadius="4px"
       >
-        <Geography />
+        <Geography isDashboard={false} />
       </Box>
     </Box>
   )

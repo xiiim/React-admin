@@ -9,7 +9,7 @@ interface BarProps{
   isDashboard: any
 }
 
-const Bar: React.FC<BarProps> = ({ isDashboard=false }) => {
+const Bar: React.FC<BarProps> = ({ isDashboard }) => {
   const theme = useTheme()
   const colors = tokens(theme.palette.mode)
 
@@ -82,7 +82,7 @@ const Bar: React.FC<BarProps> = ({ isDashboard=false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: "country", // changed
+        legend: isDashboard ? undefined : "country", // changed
         legendPosition: "middle",
         legendOffset: 32,
       }}
@@ -90,7 +90,7 @@ const Bar: React.FC<BarProps> = ({ isDashboard=false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: "food", // changed
+        legend: isDashboard ? undefined : "food", // changed
         legendPosition: "middle",
         legendOffset: -40,
       }}

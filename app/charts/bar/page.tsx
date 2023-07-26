@@ -14,7 +14,7 @@ export default function BarChart({ isDashboard = false }) {
     <Box m="20px">
       <Header title="Bar Chart" subtitle="Simple Bar Chart" />
       <Box height="72vh">
-        <Bar />
+        <Bar isDashboard={false} />
       </Box>
     </Box>
   )
