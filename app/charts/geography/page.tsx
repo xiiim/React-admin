@@ -5,7 +5,7 @@ import { tokens } from "@/theme"
 import Header from "@/components/Header"
 import Geography from "@/components/Geo"
 
-export default function GeographyChart({ isDashboard = false }) {
+export default function GeographyChart() {
   const theme = useTheme()
   const colors = tokens(theme.palette.mode)
 

@@ -6,7 +6,7 @@ import { useTheme } from "@mui/material"
 import { tokens } from "@/theme"
 import Bar from "@/components/Bar"
 
-export default function BarChart({ isDashboard = false }) {
+export default function BarChart() {
   const theme = useTheme()
   const colors = tokens(theme.palette.mode)
 
@@ -14,7 +14,7 @@ export default function BarChart({ isDashboard = false }) {
     <Box m="20px">
       <Header title="Bar Chart" subtitle="Simple Bar Chart" />
       <Box height="72vh">
-        <Bar />
+        <Bar isDashboard={false} />
       </Box>
     </Box>
   )
