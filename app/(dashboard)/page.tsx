@@ -182,7 +182,7 @@ export default function Dashboard() {
             Sales Quantity
           </Typography>
           <Box height="250px" mt="-20px">
-            <Bar isDashboard={true} />
+            <Bar />
           </Box>
         </Box>
         <Box
