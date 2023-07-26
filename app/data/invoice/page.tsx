@@ -1,14 +1,14 @@
 "use client"
 
-import Header from "@/components/Header";
-import { mockDataInvoices } from "@/data/mockData";
-import { tokens } from "@/theme";
-import { Box, Typography, useTheme } from "@mui/material";
-import { DataGrid } from "@mui/x-data-grid";
+import Header from "@/components/Header"
+import { mockDataInvoices } from "@/data/mockData"
+import { tokens } from "@/theme"
+import { Box, Typography, useTheme } from "@mui/material"
+import { DataGrid } from "@mui/x-data-grid"
 
 export default function InvoiceBalance() {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+  const theme = useTheme()
+  const colors = tokens(theme.palette.mode)
   const columns = [
     { field: "id", headerName: "ID" },
     {
