@@ -115,11 +115,6 @@ const Sidebar: React.FC = () => {
       href: '/charts/pie'
     },
     {
-      icon: <TimelineOutlinedIcon />,
-      title: 'Line Chart',
-      href: '/charts/line'
-    },
-    {
       icon: <MapOutlinedIcon />,
       title: 'Geography Chart',
       href: '/charts/geography'
@@ -170,7 +165,7 @@ const Sidebar: React.FC = () => {
                   alt="profile-user"
                   width={100}
                   height={100}
-                  src="/image/user.png"
+                  src="/image/user.jpg"
                   style={{
                     cursor: "pointer",
                     borderRadius: "50%"
